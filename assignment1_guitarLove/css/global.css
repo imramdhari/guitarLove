@@ -1,0 +1,383 @@
+* {margin: 0; padding: 0;}
+.title h1{
+    top:10vh;
+    padding-left: 28%;
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    }
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background.jpg) ;
+    width:auto;
+    height:80vh;
+    padding-top: 0vh;
+    background-size: cover;
+    background-position: center;
+   }
+
+.button li{
+    list-style-type: none;
+    padding:30px 20px;
+}
+
+.button{
+    position:absolute;
+    left: 35%;
+    top: 30%;
+    
+}
+.btn{
+    display: block;
+    border: 1px solid #fff;
+    padding:30px 150px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.btn:hover{
+    background-color: white;
+    color:#000
+}
+
+
+
+.lbl li{
+    padding:11.5px;
+}
+.lbl{
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:25%;
+    left:15%;
+    
+}
+
+.field li{
+    padding:10px;
+}
+
+.field li input{
+    width:350px;
+    height:30px;
+}
+.field{
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:25%;
+    left:35%;
+    
+}
+
+
+
+.Nbutton{
+    position:absolute;
+    left: 25%;
+    top: 84%;
+    padding: 10px 30px;
+}
+
+.Nbutton li{
+    padding:10px 50px;
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.Nbtn{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    
+}
+.Nbtn:hover{
+    background-color: white;
+    color:#000
+}
+.tag{
+    Top:26%;
+    left:70%;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+
+.navigation li{
+    list-style-type: none;
+    padding:20px 20px;
+    padding-bottom: 0px;
+}
+
+.navigation{
+    
+    display: flex;
+    background: rgba(146, 143, 140, 0.288);
+    transition: .5s;
+    justify-content: center;
+}
+.nav{
+    display: block;
+    border: 1px  #fff;
+    padding:5px 15px;
+    color: white;
+    font-size: 20px;
+    
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.nav:hover{
+    background-color: white;
+    color:#000
+}
+
+#toggle{
+    display:none;
+}
+
+.togglearea{
+    background-color: rgba(146, 143, 140, 0.288);
+    border-bottom: 1px transparent;
+    color:transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.togglearea label{
+    background-color:transparent;
+    height: 45px;
+    width: 50px;
+    border-radius:6px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.togglearea label span{
+    background-color:white;
+    height:3px;
+    width:70%;
+    margin:2px 0px;
+}
+
+.togglearea{
+    display:none;
+}
+
+.details{
+    list-style-type: none;
+    color: white;
+    font-weight:bold;
+    font-size: 30px;
+    left:45%;
+    top:300px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.details li{
+    padding:  11px;
+    display: flex;
+    justify-content: center;
+}
+.navigation li.active a{
+    background-color: white;
+    color:#000;
+
+}
+ .image{
+     padding-left:43%;
+ }
+ .logout{
+     padding-left:45% ;
+     padding-top: 20px;
+     list-style-type: none;
+ }
+
+ .editpicture{
+    padding-left:44.2% ;
+    padding-top: 20px;
+    list-style-type: none;
+ }
+
+
+
+
+@media (max-width:1070){
+   
+    .navigation
+    {
+        flex-direction: column;
+        display: none;
+    }
+
+    #toggle:checked + .navigation{
+        display:flex;
+    }
+
+    .togglearea{
+        display:flex;
+    }
+    
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpg) ;
+        width:100%;
+        height:100vh;
+        padding-top: 0vh;
+        background-size: cover;
+        background-position: center;
+       }
+
+       .details{
+        list-style-type: none;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        left:45%;
+        top:300px;
+        text-decoration: none;
+        text-align: center;
+        justify-content: flex-start;
+    }
+    .details li{
+        padding:  11px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+    .image{
+        padding-left:25px;
+    }
+    .logout{
+        padding-left:25px ;
+        padding-top: 20px;
+        list-style-type: none;
+    }
+   
+    .editpicture{
+       padding-left:25px ;
+       padding-top: 20px;
+       list-style-type: none;
+    }
+    .button li{
+        list-style-type: none;
+        padding:20px 20px;
+    }
+    
+    .button{
+        left:25%;
+        
+        
+        
+        
+    }
+    .btn{
+        display: block;
+        border: 1px solid #fff;
+        padding:20px 20px;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        transition: 0.5s ease;
+    }
+    .btn:hover{
+        background-color: white;
+        color:#000
+    }
+      
+    .title h1{
+        top:10vh;
+        padding-left: 13%;
+        font-size: 40px;
+        position: fixed;
+        color: white;
+        }
+
+    
+.lbl li{
+    padding:11.5px;
+}
+.lbl{
+    display:none;
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:25%;
+    left:15%;
+    
+}
+
+.field li{
+    padding:10px;
+}
+
+.field li input{
+    width:350px;
+    height:30px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+.field{
+    list-style-type: none;
+    border-radius: 6px;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+
+    top:22%;
+    left:5%;
+    
+}
+.tag{
+    Top:20%;
+    left:70%;
+    color: white;
+    position: fixed;
+    font-size: 30px;
+    
+    
+}
+ 
+.Nbutton{
+    position:absolute;
+    left: 5%;
+    top: 84%;
+    padding: 10px 30px;
+}
+
+.Nbutton li{
+    padding:10px 30px;
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.Nbtn{
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    
+}
+.Nbtn:hover{
+    background-color: white;
+    color:#000
+}
+
+}
